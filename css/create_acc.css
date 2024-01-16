@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: rgba(250, 250, 250, 1);
+    overflow-x: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container .col .box {
+    width: 350px;
+    height: 640px;
+    border: 1px solid rgba(219, 219, 219, 1);
+    background: white;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+.container .col .box .title {
+    position: relative;
+    top: 5px;
+    text-align: center;
+}
+
+.container .col.content {
+    position: relative;
+    top: 12px;
+}
+
+.container .col .box .title img {
+    width: 190px;
+    height: 80px;
+}
+
+.container .col .box .login-form {
+    position: relative;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.container .col .box .login-form .form-content {
+    position: relative;
+    margin: 5px 0;
+    top: 22px;
+}
+
+.container .col .box .login-form .form-content input {
+    border-style: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.container .col .box .login-form .form-content input:hover {
+    border-bottom: 3px solid #000;
+}
+
+.container .col .box .login-form .form-content input select {
+    border-style: none;
+}
+
+.container .col .box .login-form label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9px;
+    font-size: 12px;
+    color: rgba(142, 142, 142, 1);
+    pointer-events: none;
+    order: -1;
+    transition: 0.3s ease;
+}
+
+.container .col .box .login-form input {
+    background: transparent;
+    width: 270px;
+    height: 40px;
+    background: rgba(250, 250, 250, 1);
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+    padding: 9px 0 7px 8px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.container .col .box .login-form input:valid {
+    padding-bottom: 0;
+}
+
+.container .col .box .login-form input:valid+label {
+    transform: translateY(-16px);
+    font-size: 10px;
+}
+
+.container .col .box .login-form button {
+    align-items: left;
+    width: 270px;
+    height: 30px;
+    /* transition: 0.3s ease-in-out; */
+    border: 1px solid #000;
+    border-radius: 7px;
+    transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.container .col .box .login-form button:hover {
+    border: 1px solid #fff;
+    color: white;
+    border: 1px solid #3b52ff;
+    background-color: #3b52ff;
+}
+
+.container .col .box .login-form .form-ending {
+    position: relative;
+    width: 270px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.container .col .box .login-form .form-ending #OR {
+    color: rgba(142, 142, 142, 1);
+    background: white;
+    text-align: center;
+    width: 50px;
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    z-index: 3;
+    position: relative;
+    display: block;
+}
+
+.container .col .box .login-form .form-ending #line {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22px;
+    width: 270px;
+    height: 1px;
+    background: rgba(219, 219, 219, 1);
+}
+
+.container .col .box .login-form .form-ending a {
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    color: #3b52ff;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.container .col .mini-box {
+    width: 350px;
+    height: 65px;
+    background: white;
+    border: 1px solid rgba(219, 219, 219, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .col .mini-box .text {
+    font-size: 14px;
+    color: rgba(38, 38, 38, 1);
+}
+
+.container .col .mini-box .text a {
+    text-decoration: none;
+    color: #3b52ff;
+    font-weight: 400;
+}
+
+#image {
+    margin-top: 0px;
+    height: 620px;
+    z-index: 2;
+    -webkit-box-shadow: 11px 0px 19px -5px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 11px 0px 19px -5px rgba(0, 0, 0, 0.43);
+    box-shadow: 11px 0px 19px -5px rgba(0, 0, 0, 0.43);
+}
+
+.footer-text {
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+}
